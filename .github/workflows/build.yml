@@ -37,7 +37,6 @@ on:
       ANSIBLE_DEBUG:
         type: choice
         description: ANSIBLE_DEBUG (true, false)
-        default: "false"
         options:
           - "false"
           - "true"
@@ -54,7 +53,6 @@ on:
       build_upload:
         type: choice
         description: Upload release to Vagrant Cloud
-        default: "false"
         options:
           - "false"
           - "true"
@@ -198,8 +196,7 @@ jobs:
           set -euxo pipefail
           # Remove unused packages to save some disk space
           rm -rf /Users/runner/Library/Developer /Users/runner/Library/Android /Users/runner/hostedtoolcache /Users/runner/.dotnet
-          brew update
-          brew install bash coreutils gnu-sed jq packer hudochenkov/sshpass/sshpass vagrant
+          brew install bash coreutils gnu-sed jq packer hudochenkov/sshpass/sshpass hashicorp/tap/hashicorp-vagrant
           if [[ "${PACKER_VAGRANT_PROVIDER}" = "libvirt" ]]; then
             brew install qemu xorriso
           fi
