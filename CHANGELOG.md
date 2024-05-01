@@ -1,5 +1,42 @@
 # Changelog
 
+## [0.3.0](https://github.com/elliotks/packer-templates/compare/v0.2.5...v0.3.0) (2024-05-01)
+
+
+### Features
+
+* **build:** disable building windows-server-2016 images ([d8cf08e](https://github.com/elliotks/packer-templates/commit/d8cf08e798113f1398188b28d367233df98acc21))
+* **gh_actions:** replace stale + add commitlint ([bc8ab27](https://github.com/elliotks/packer-templates/commit/bc8ab27bb17b99fe578ab9d2933096f97f3a6f8e))
+* **gh-actions:** add lint-pr-title ([7882048](https://github.com/elliotks/packer-templates/commit/7882048b70946bd075654129c029a1169e1bb546))
+* **gh:** add default GitHub repo files ([#517](https://github.com/elliotks/packer-templates/issues/517)) ([8e3c70d](https://github.com/elliotks/packer-templates/commit/8e3c70d10bca7df45a27ea5fa9d05cde940396fb))
+* **gh:** add default GitHub repo files ([#519](https://github.com/elliotks/packer-templates/issues/519)) ([d2f6827](https://github.com/elliotks/packer-templates/commit/d2f6827c855cb661f32bfbe33f820dd74bc8232f))
+* **gh:** add default GitHub repo files ([#520](https://github.com/elliotks/packer-templates/issues/520)) ([66ee28f](https://github.com/elliotks/packer-templates/commit/66ee28fe2daa6a767779c17c7239df6c722d080d))
+* **gha:** unify GHA - renovate, megalinter, markdown, and others ([#493](https://github.com/elliotks/packer-templates/issues/493)) ([c5d87d3](https://github.com/elliotks/packer-templates/commit/c5d87d3a53a3a7149733e2a2dd35d1a6e7f7ea39))
+* **iso:** update windows-10-enterprise-x64-eval iso ([#461](https://github.com/elliotks/packer-templates/issues/461)) ([6d3b8c3](https://github.com/elliotks/packer-templates/commit/6d3b8c3cf37d609d1fdb535584e907100f7b875c))
+* **iso:** update windows-server-2019-standard-x64-eval iso ([#460](https://github.com/elliotks/packer-templates/issues/460)) ([f6cf6af](https://github.com/elliotks/packer-templates/commit/f6cf6af5f09a12a368c54e879260826d65d1e43a))
+* **iso:** update windows-server-2022-standard-x64-eval iso ([#457](https://github.com/elliotks/packer-templates/issues/457)) ([21fabc2](https://github.com/elliotks/packer-templates/commit/21fabc252e7b566fe3a063164bfd3b7cb4a75db7))
+* **renovate:** skip waiting for tests in renovate ([#430](https://github.com/elliotks/packer-templates/issues/430)) ([39d2383](https://github.com/elliotks/packer-templates/commit/39d2383c0e987e65a15701e54601aac1e83a1ac6))
+* **submodule:** update submodules ([#427](https://github.com/elliotks/packer-templates/issues/427)) ([92ca343](https://github.com/elliotks/packer-templates/commit/92ca343f30d1982fd426465368296ccfbd043f51))
+
+
+### Bug Fixes
+
+* 154 - disable hyper-v qemu flag stimer ([#159](https://github.com/elliotks/packer-templates/issues/159)) ([2469fcd](https://github.com/elliotks/packer-templates/commit/2469fcd2a4316894fa40c7a4388196665db4f40b))
+* **ansible:** add no_proxy parameter to use latest ansible ([#453](https://github.com/elliotks/packer-templates/issues/453)) ([ad8a10d](https://github.com/elliotks/packer-templates/commit/ad8a10de202ad91bf7a276937b320f9530a3e9a0))
+* **build:** fix issues with virtualbox ([#426](https://github.com/elliotks/packer-templates/issues/426)) ([a129c83](https://github.com/elliotks/packer-templates/commit/a129c83f11606ffeaf63c7cc463a03971b28b46e))
+* **build:** fix libvirt build ([7cc1e09](https://github.com/elliotks/packer-templates/commit/7cc1e09b0b32c62ebba6c23602a9b71c12cbcfaa))
+* **centos-json:** fix missing slash in iso_urls and iso_checksum ([d54fa5d](https://github.com/elliotks/packer-templates/commit/d54fa5d3993c9a092ecf6e3e35f7735228c82c96))
+* **docs:** add unzip to dependencies/requirements ([#199](https://github.com/elliotks/packer-templates/issues/199)) ([3fd7fd1](https://github.com/elliotks/packer-templates/commit/3fd7fd1a3666baef176dd239515f6e8546396926))
+* **gha:** add release-please ([#481](https://github.com/elliotks/packer-templates/issues/481)) ([5a1ab3d](https://github.com/elliotks/packer-templates/commit/5a1ab3d030f0c1706c7b10c7f1e4dae59d8cb9a1))
+* **gha:** add vagrant plugin to packer-templates gha ([#523](https://github.com/elliotks/packer-templates/issues/523)) ([0cf5c20](https://github.com/elliotks/packer-templates/commit/0cf5c20df649d179d2a743aaa807dca374f98ddf))
+* **gha:** fix megalinter permissions ([#463](https://github.com/elliotks/packer-templates/issues/463)) ([6020965](https://github.com/elliotks/packer-templates/commit/60209658a9b97927d3e8d358c9a5f53db2951669))
+* **linter:** fix linting issues ([1c4a2c1](https://github.com/elliotks/packer-templates/commit/1c4a2c1353657c06f6503c6122faeb636c7dfab8))
+* **renovate:** disable dashboard ([#516](https://github.com/elliotks/packer-templates/issues/516)) ([c733afa](https://github.com/elliotks/packer-templates/commit/c733afa4555ed5da4e9785ff0ec294fa78408f02))
+* **renovate:** schedule typo ([eb6a897](https://github.com/elliotks/packer-templates/commit/eb6a897ced23afcc7a6488991c2ede77e58ce447))
+* **templates:** fix url for VirtIO ([7338196](https://github.com/elliotks/packer-templates/commit/73381960e160126109759222a36308b75b6d4fb7))
+* **win32-openssh:** Fix Win32-OpenSSH version ([#421](https://github.com/elliotks/packer-templates/issues/421)) ([e4c15a2](https://github.com/elliotks/packer-templates/commit/e4c15a2f79668ba91d13ccd71aa9612bfd2e4c4f))
+* **win32-openssh:** Fix Win32-OpenSSH version 2 ([#422](https://github.com/elliotks/packer-templates/issues/422)) ([40dbf5e](https://github.com/elliotks/packer-templates/commit/40dbf5e6e292f8da74ad04a60c0aa1d77409ce30))
+
 ## [0.2.5](https://github.com/ruzickap/packer-templates/compare/v0.2.4...v0.2.5) (2024-02-03)
 
 
